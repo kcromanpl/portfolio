@@ -1,38 +1,39 @@
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    margin: 20px;
+/* .container {
+    /* margin: 20px; */
     clear: both;
 }
-
+*/ 
 .nav {
-    height: 100px;
+    height: 80px;
     background-color: #333;
     padding: 0 20px;
     color: #fff;
 }
 
 .logo {
-    padding-top: 10px;
     height: 80px;
     float: left;
 
 }
 
-.menu ul {
+.nav .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     float: right;
+    margin-top: 30px;
 }
 
 .menu ul li {
     float: left;
-    padding-top: 30px;
+  
 }
 
 .menu ul li a {
@@ -61,30 +62,41 @@ body {
 
 /* INFORMATION */
 .information{
-    clear: both;
+    display: flex;
     margin-top: 20px;
     background-color: #f7f7f7;
+    position: relative;
 
 }
-.informationtext {
-    float: right;
-    margin: 100px 365px 0px 0px;
-
-}
-.informationtext h1:before {
+/* .informationtext h1:before {
     content: open-quote;
-}
+} */
 .informationtext h1::first-letter{
     font-size: 3em;
     font-weight: bold;
     color: #aaa;
     font-family: "Gentium Book Basic", serif;
-
-
-
-
 }
-
+.informationtext{
+    text-transform: uppercase;
+}
+.informationtext h1{
+    margin-bottom: 2px;
+}
+.informationtext span:before{
+    content: open-quote;
+}
+.informationtext span:after{
+    content: close-quote;
+}
 tr{
     line-height: 2;
+}
+/* SKILLS */
+.skills{
+    display: flex;
+}
+.skills img{
+    width: 200px;
+    height: 200px;
 }
