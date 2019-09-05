@@ -1,23 +1,90 @@
-img{
-    width: 50px;
-    height: 50px;;
-}
-.information img{
-    width: 400px;
-    height: 400px;
-}
-nav ul img{
-    width: 40px;
-    height: 40px;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-nav ul{
-    display: flex;
+.container {
+    margin: 20px;
+    clear: both;
 }
-nav ul li{
-    display: flex;
-    list-style: none;
+
+.nav {
+    height: 100px;
+    background-color: #333;
+    padding: 0 20px;
+    color: #fff;
 }
-nav ul li a {
+
+.logo {
+    padding-top: 10px;
+    height: 80px;
+    float: left;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+}
+
+.menu ul li {
+    float: left;
+    padding-top: 30px;
+}
+
+.menu ul li a {
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+}
+
+.menu ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.menu ul li a.active {
+    background-color: #4CAF50;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .menu ul li {
+        float: none;
+    }
+}
+
+/* INFORMATION */
+.information{
+    clear: both;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+
+}
+.informationtext {
+    float: right;
+    margin: 100px 365px 0px 0px;
+
+}
+.informationtext h1:before {
+    content: open-quote;
+}
+.informationtext h1::first-letter{
+    font-size: 3em;
+    font-weight: bold;
+    color: #aaa;
+    font-family: "Gentium Book Basic", serif;
+
+
+
+
+}
+
+tr{
+    line-height: 2;
 }
