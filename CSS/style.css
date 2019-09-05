@@ -120,6 +120,14 @@ tr{
     display: flex;
     justify-content: space-around;
 }
+.button-center{
+    margin: 0 auto;
+    display: flex;
+}
 .contactarea input{
     margin: 0px 10px 20px 0; 
+}
+/* Footer */
+footer p{
+    text-align: center;
 }
