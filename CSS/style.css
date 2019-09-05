@@ -1,13 +1,14 @@
-
-body {
+/* Basic */
+html{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-/* .container {
+ .container {
     /* margin: 20px; */
-    clear: both;
+  
 }
-*/ 
+/* Header */
 .nav {
     height: 80px;
     background-color: #333;
@@ -29,6 +30,9 @@ body {
     background-color: #333;
     float: right;
     margin-top: 30px;
+}
+.menu{
+    clear: both;
 }
 
 .menu ul li {
@@ -62,6 +66,7 @@ body {
 
 /* INFORMATION */
 .information{
+    padding: 20px 0px 20px 0px;
     display: flex;
     margin-top: 20px;
     background-color: #f7f7f7;
@@ -71,6 +76,9 @@ body {
 /* .informationtext h1:before {
     content: open-quote;
 } */
+.information img{
+    height: 400px;
+}
 .informationtext h1::first-letter{
     font-size: 3em;
     font-weight: bold;
@@ -93,10 +101,25 @@ tr{
     line-height: 2;
 }
 /* SKILLS */
-.skills{
+.skillsset{
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.skills img{
+.skillsset img{
     width: 200px;
     height: 200px;
+}
+/* Contact */
+.contact{
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+.contactarea input{
+    margin: 0px 10px 20px 0; 
 }
