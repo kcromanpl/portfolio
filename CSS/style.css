@@ -1,133 +1,213 @@
 /* Basic */
-html{
-    font-family: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
- .container {
-    /* margin: 20px; */
-  
+body {
+    font-family: 'Poppins', sans-serif;
+   /* width: 100%;
+    max-width: 1000px; */
 }
+
+/* ECLIPSE BACKGROUND */
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    /* concept of layer in photoshop */
+    opacity: 0.5;
+    height: 80%;
+}
+
+.mid-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 60%;
+}
+
+.sm-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
 /* Header */
-.nav {
-    height: 80px;
-    background-color: #333;
-    padding: 0 20px;
-    color: #fff;
+header {
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
 }
 
 .logo {
-    height: 80px;
-    float: left;
-
+    font-weight: 400;
+    margin: 5px;
 }
 
-.nav .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    float: right;
-    margin-top: 30px;
-}
-.menu{
-    clear: both;
+nav {
+
+    flex: 2;
 }
 
-.menu ul li {
-    float: left;
-  
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
 }
 
-.menu ul li a {
-
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.nav-link a {
+    color: #5f5f79;
+    font-size: 18px;
     text-decoration: none;
 }
 
-.menu ul li a:hover:not(.active) {
-    background-color: #111;
+.nav-link a:hover {
+    color: #444444;
 }
 
-.menu ul li a.active {
-    background-color: #4CAF50;
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .menu ul li {
-        float: none;
-    }
+.nav-link a:active {
+    color: #494964;
 }
 
 /* INFORMATION */
-.information{
-    padding: 20px 0px 20px 0px;
+.presentation {
     display: flex;
-    margin-top: 20px;
-    background-color: #f7f7f7;
-    position: relative;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.cover {
+    flex: 1;
+}
+
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+.image-select {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 12%;
+    ;
+    left: 14%;
 
 }
-/* .informationtext h1:before {
-    content: open-quote;
-} */
-.information img{
-    height: 400px;
+
+.introduction {
+    flex: 1;
 }
-.informationtext h1::first-letter{
-    font-size: 3em;
-    font-weight: bold;
-    color: #aaa;
-    font-family: "Gentium Book Basic", serif;
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500px;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    /* 3 lines gives linear gradient to the text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.informationtext{
-    text-transform: uppercase;
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
 }
-.informationtext h1{
-    margin-bottom: 2px;
+
+.cta {
+    padding: 50px 0px 0px 0px;
 }
-.informationtext span:before{
-    content: open-quote;
+
+.cta-select {
+    background: 2px solid #585772;
+    background: transparent;
+    color: #585772;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 30%;
 }
-.informationtext span:after{
-    content: close-quote;
-}
-tr{
-    line-height: 2;
-}
-/* SKILLS */
-.skillsset{
-    padding: 20px 0px 20px 0px;
+
+/* EDUCATION */
+.info {
+
     margin-top: 20px;
+    background-color: #faffff;
+}
+
+.info h2 {
+    text-align: center;
+    margin: 50px 0px;
+    background-color: #fafeef;
+}
+
+.info .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
-.skillsset img{
-    width: 200px;
-    height: 200px;
+
+.info .box dl {
+    margin-top: 20px;
+}
+.info .box h3{
+    background-color: #fafaef;
+}
+.box h3,
+.info .box dt,
+.info .box dd {
+    text-align: center;
+
+}
+
+/* SKILLS !! Using Concept of Float */
+
+#skills {
+    margin: 20px 0px 0px 20px;
+    background-color: #faffff;
+}
+#skills .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#skills .box img {
+    width: 90px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin: 50px 0px;
+    background-color: #fafeef;
 }
 /* Contact */
 .contact{
-    padding: 20px 0px 20px 0px;
-    margin-top: 20px;
-    background-color: #333;
+    clear: both;
     display: flex;
-    justify-content: space-around;
-}
-.button-center{
-    margin: 0 auto;
-    display: flex;
-}
-.contactarea input{
-    margin: 0px 10px 20px 0; 
-}
-/* Footer */
-footer p{
-    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }

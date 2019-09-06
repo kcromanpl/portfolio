@@ -1,71 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-        
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/3739d73429.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Roman KC</title>
 </head>
 
 <body>
     <!-- Container -->
     <div class="container">
+        <!-- round images -->
+        <img class="big-circle" src="/img/big-eclipse.svg" alt="big">
+        <img class="mid-circle" src="/img/mid-eclipse.svg" alt="mid">
+        <img class="sm-circle" src="/img/small-eclipse.svg" alt="small">
 
-        <!-- NAV -->
-        <header class="nav">
-            <nav class="menu">
-                <img class="logo" src="img/logo.png" alt="LOGO">
-                <ul>
+        <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <img src="./img/logo.svg" alt="logo">
+                <h4 class="logo">Roman KC</h4>
+            </div>
 
-                    <li><a href="#information">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">Information</a></li>
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- information -->
-        <section class="information">
-
-            <img src="img/logo.png">
-            <div class="informationtext">
-
-                <h1>Roman KC</h1>
-                <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eum at doloremque delectus
-                    reprehenderit beatae, iste, facilis vel molestias autem aspernatur. Voluptatem ipsum repudiandae
-                    corrupti necessitatibus in ab, ut eos!</p>
+        <!-- MAIN SECTION -->
+        <section class="presentation">
+            <div class="cover">
+                <img src="/img/matebook.png" alt="matebook" />
             </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="skills">
-            <h2> Skills</h2>
-            <div class="skillsset">
-                <div>
-                    <img src="img/logo.png"><br>
-                    <span>Designer</span>
+            <div class="image-select">
+                <img src="/img/arrow-left.svg" alt="aleft">
+                <img src="/img/dot.svg" alt="dot">
+                <img src="/img/dot-full.svg" alt="adot">
+                <img src="/img/dot-full.svg" alt="adot">
+                <img src="/img/arrow-right.svg" alt="aright">
+            </div>
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Roman KC</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reiciendis deserunt, magni incidunt
+                        vitae iusto molestiae hic dolorem beatae, eligendi facilis dicta! Qui vero est recusandae
+                        laudantium sunt, placeat animi.</p>
                 </div>
-                <div>
-                    <img src="img/logo.png"><br>
-                    <span>Developer</span>
-                </div>
-                <div>
-                    <img src="img/logo.png"><br>
-                    <span>Photography</span>
-                </div>
-                <div>
-                    <img src="img/logo.png"><br>
-                    <span>Travelling</span>
+                <div class="cta">
+                    <button class="cta-select">CV</button>
                 </div>
             </div>
         </section>
+        <!-- EDUCATION EXPERIENCE PROJECTS -->
+        <section class="info">
+            <h2> Information</h2>
+            <div class="container">
+                <div class="box">
+                    <h3>Acadmeic</h3>
+                    <dl>
+                        <dt>B.Sc. CSIT</dt>
+                        <dd>Patan Multiple Campus</dd><br>
+                        <dt>+2</dt>
+                        <dd>Pinnacle Academy</dd><br>
+                        <dt>S.L.C</dt>
+                        <dd>Nava Kunja Secondary School</dd>
+                    </dl>
+                </div>
+                <div class="box">
+                    <h3>Experience</h3>
+                    <dl>
+                        <dt>Front End Developer</dt>
+                        <dd>Dynamic Technosoft</dd><br>
+                        <dt>Executive Member</dt>
+                        <dd>CSIT Association of Nepal</dd><br>
+                        <dt>Volunteer</dt>
+                        <dd>Daayitwa</dd>
+                    </dl>
+                </div>
+                <div class="box">
+                    <h3>Projects</h3>
+                    <dl>
+                        <dt>Real Time Sentiment Analysis</dt>
+                        <dd>Final Project</dd><br>
+                        <dt>Completed several Javascript Projects</dt>
+                    </dl>
+                </div>
+            </div>
+        </section>
 
-        <!-- Contact -->
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="box">
+                    <img src="./img/logo_html.png">
+                    <h3>HTML5 Markup</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_css.png">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_brush.png">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies</p>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
         <section class="contact">
             <div class="contactname">
                 <h2>Roman KC</h2>
@@ -84,15 +136,11 @@
                     <input placeholder="Your Email" type="email"><br>
                     <input placeholder="Subject" type="text"><br>
                     <input placeholder="Message" type="text"><br>
-                    <button class="button-center"value="Submit"> Send Message</button>
+                    <button class="button-center" value="Submit"> Send Message</button>
                 </form>
             </div>
-            </section>
+        </section>
 
-            <!-- FOOTER -->
-            <footer>
-                <p>&copy; Copyright 2019, Roman KC</p>
-            </footer>
 
     </div>
 </body>
