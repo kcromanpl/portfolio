@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Roman KC</title>
 </head>
 
@@ -12,9 +14,9 @@
     <!-- Container -->
     <div class="container">
         <!-- round images -->
-        <img class="big-circle" src="/img/big-eclipse.svg" alt="big">
-        <img class="mid-circle" src="/img/mid-eclipse.svg" alt="mid">
-        <img class="sm-circle" src="/img/small-eclipse.svg" alt="small">
+        <img class="big-circle" src="./img/big-eclipse.svg" alt="big">
+        <img class="mid-circle" src="./img/mid-eclipse.svg" alt="mid">
+        <img class="sm-circle" src="./img/small-eclipse.svg" alt="small">
 
         <!-- Header -->
         <header>
@@ -25,24 +27,25 @@
 
             <nav>
                 <ul class="nav-links">
-                    <li class="nav-link"><a href="#">Information</a></li>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#information">Information</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- MAIN SECTION -->
-        <section class="presentation">
+        <section id="home" class="presentation">
             <div class="cover">
-                <img src="/img/matebook.png" alt="matebook" />
+                <img src="./img/2500.jpg" alt="Romankc" />
             </div>
             <div class="image-select">
-                <img src="/img/arrow-left.svg" alt="aleft">
-                <img src="/img/dot.svg" alt="dot">
-                <img src="/img/dot-full.svg" alt="adot">
-                <img src="/img/dot-full.svg" alt="adot">
-                <img src="/img/arrow-right.svg" alt="aright">
+                <img src="./img/arrow-left.svg" alt="aleft">
+                <img src="./img/dot.svg" alt="dot">
+                <img src="./img/dot-full.svg" alt="adot">
+                <img src="./img/dot-full.svg" alt="adot">
+                <img src="./img/arrow-right.svg" alt="aright">
             </div>
             <div class="introduction">
                 <div class="intro-text">
@@ -56,8 +59,9 @@
                 </div>
             </div>
         </section>
+
         <!-- EDUCATION EXPERIENCE PROJECTS -->
-        <section class="info">
+        <section id="information" class="info">
             <h2> Information</h2>
             <div class="container">
                 <div class="box">
@@ -117,32 +121,40 @@
                 </div>
             </div>
         </section>
+
         <!-- contact -->
-        <section class="contact">
-            <div class="contactname">
-                <h2>Roman KC</h2>
-                <address>
-                    Lubhu - 8, Lalitpur
-                </address>
-                <a href="facebook.com"><i class="fab fa-facebook"></i></a>
-                <a href="Instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="LinkedIn.com"><i class="fas fa-camera"></i></a>
-                <a href="Google.com"><i class="fas fa-camera"></i></a>
-                <br>
-            </div>
-            <div class="contactarea">
-                <form>
-                    <input placeholder="Your Name" type="text">
-                    <input placeholder="Your Email" type="email"><br>
-                    <input placeholder="Subject" type="text"><br>
-                    <input placeholder="Message" type="text"><br>
-                    <button class="button-center" value="Submit"> Send Message</button>
-                </form>
+        <section id="contact" class="contact">
+            <!-- ID ra class ko name same dina paauxa ki nai ask -->
+            <h2> Contact</h2>
+            <div class="container">
+                <div class="contactname">
+                    <img src="./img/2500.jpg" alt="Romankc" />
+                    <h3>Roman KC</h3>
+                    <address>
+                        Lubhu - 8, Lalitpur <br>
+                    </address>
+                    <div class="social-icon">
+                        <a href="www.facebook.com/luffyviruss"><i class="fa fa-facebook"></i></a>
+                        <a href="www.instagram.com/luffyviruss"><i class="fa fa-instagram"></i></a>
+                        <a href="www.linkedin.com/ln/kcromanpl"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="contactarea">
+                    <form>
+                        <input placeholder="Your Name" type="text">
+                        <input placeholder="Your Email" type="email">
+                        <input placeholder="Subject" type="text">
+                        <input placeholder="Message" type="text">
+                        <button class="button-center" value="Submit"> Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
 
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
