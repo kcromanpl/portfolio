@@ -223,6 +223,7 @@ nav {
 .contact .container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
     align-items: center;
     justify-items: center;
 }
@@ -257,12 +258,14 @@ nav {
     padding: 5px;
     margin-top: 5px;
 }
-
+.contactarea{
+    max-width: 800px;
+}
 .contactarea input,
 .contactarea button {
     line-height: 2.5;
     margin-bottom: 20px;
-    width: 80%;
+    width: 60%;
 }
 
 .contactarea input {
@@ -271,5 +274,14 @@ nav {
 
 .contactarea button {
     width: 50%;
-    margin-left: 15%;
+    margin-left: 5%; 
+}
+
+#message {
+    height: 10vh;
+}
+#spanName,#spanEmail{
+    font-size: 12px;
+    font-weight: 100;
+    
 }
