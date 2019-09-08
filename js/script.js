@@ -6,8 +6,6 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 })
 
-
-
 function emFocus(idName) {
     document.getElementById(idName).value = '';
     document.getElementById(idName).focus();

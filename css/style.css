@@ -372,4 +372,8 @@ nav {
 	}
 }
 
-@media screen and (max-width: 768px) {}
+footer p{
+	color: #5f5f79;
+	text-align: center;
+	margin : 20px 0px;
+}
