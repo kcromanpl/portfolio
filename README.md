@@ -2,9 +2,6 @@
 
 Designining personal portfolio as a part of learning HTML | CSS on Jyaasa bootcamp to show off my projects &works using the practice of semantic HTML, optimized CSS and DRY ("Don't Repeat Yourself). 
 
-##Table Of Contents
-
-
 ##Change Log
 0.8.0 - Added smooth.js for smooth transition 
 

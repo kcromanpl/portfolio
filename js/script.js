@@ -32,3 +32,13 @@ function validate() {
     }
 
 }
+
+// jQuery //to select input (element) and change its css properties
+$(document).ready(function(){
+    $("input").focus(function(){
+      $(this).css("transform", "scale(1.1)");
+    });
+    $("input").blur(function(){
+      $(this).css("transform", "scale(1)");
+    });
+  });
