@@ -76,17 +76,17 @@ nav {
 	list-style: none;
 }
 
-.nav-link a {
+.nav-links li a {
 	color: #5f5f79;
 	font-size: 18px;
 	text-decoration: none;
 }
 
-.nav-link a:hover {
+.nav-links li a:hover {
 	color: #444444;
 }
 
-.nav-link a:active {
+.nav-links li a.active {
 	color: #494964;
 }
 
@@ -108,6 +108,7 @@ nav {
 	height: 60vh;
 	border-radius: 50%;
 	filter: drop-shadow(0px 5px 3px black);
+	margin-bottom: 10px;
 }
 
 .cover q {
@@ -171,6 +172,7 @@ nav {
 	font-size: 26px;
 	transition: 0.2s linear;
 }
+
 .cta-select:hover i {
 	transform: scale(1.3);
 	color: #585772;
@@ -219,7 +221,9 @@ nav {
 }
 
 .info h2,
-.skills h2 {
+.skills h2,
+.contact h2 {
+	/* reusing code */
 	color: #5f5f79;
 	text-align: center;
 	margin: 50px 0px;
@@ -271,6 +275,7 @@ nav {
 	margin: 50px 0px;
 	background-color: #fafeef;
 } */
+
 /* SKILLS */
 .skills .box {
 	width: 30%;
@@ -286,7 +291,7 @@ nav {
 
 .contact {
 	/* clear: both; */
-	/* Using float for section : Skills */
+	/* When Using float for section : Skills */
 	background-color: #faffff;
 }
 
@@ -298,21 +303,14 @@ nav {
 	align-items: center;
 }
 
-.contact h2 {
-	color: #5f5f79;
-	text-align: center;
-	margin: 50px 0px;
-	background-color: #fafeef;
-}
-
 .social-icon {
 	margin-top: 5px;
+	font-size: 20px;
 }
 
 .social-icon a {
 	margin-left: 15px;
 }
-
 .contactname {
 	margin-top: -30px;
 	/* minus rakhera milaunu good ya bad ? */
