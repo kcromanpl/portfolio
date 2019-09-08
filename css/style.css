@@ -83,10 +83,10 @@ nav {
 }
 
 .nav-links li a:hover {
-	color: #444444;
+	color: #3498db;
 }
 
-.nav-links li a.active {
+.nav-links li a:active {
 	color: #494964;
 }
 
@@ -285,6 +285,10 @@ nav {
 
 .skills .box img {
 	width: 90px;
+}
+/* Work */
+.works .box img {
+	width: 200px;
 }
 
 /* Contact */
