@@ -1,13 +1,39 @@
 /* Basic */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
-
+/* 
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
+} */
 
+html,
+body,
+div,
+img,
+header,
+nav,
+ul,
+li,
+a,
+section,
+h1,
+h2,
+h3,
+h4,
+p,
+br,
+span,
+i,
+dl,
+dt,
+dd,
+input{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+} 
 body {
 	font-family: 'Poppins', sans-serif;
 	/* width: 100%;
@@ -101,6 +127,7 @@ nav {
 }
 
 .cover {
+	text-align: center;
 	flex: 1;
 }
 
@@ -286,6 +313,7 @@ nav {
 .skills .box img {
 	width: 90px;
 }
+
 /* Work */
 .works .box img {
 	width: 200px;
@@ -308,15 +336,17 @@ nav {
 }
 
 .social-icon {
-	margin-top: 5px;
+	margin: 5px 0px 0px -20px;
 	font-size: 20px;
 }
 
 .social-icon a {
 	margin-left: 15px;
 }
+
 .contactname {
 	margin-top: -30px;
+	text-align: center;
 	/* minus rakhera milaunu good ya bad ? */
 }
 
@@ -428,6 +458,23 @@ nav {
 	.skills .box {
 		width: 100%;
 		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 480px){
+	.container{
+		margin: 0 atuo;
+		margin-left: 5%;
+	}
+	.contactarea {
+		margin-left: 20px;
+	}
+	.contact input:first-child{
+		margin-top: 10px;
+	}
+	.contactarea button {
+		width: 100%;
+		margin-left: 0px; 
+
 	}
 }
 
