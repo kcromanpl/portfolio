@@ -29,11 +29,12 @@ i,
 dl,
 dt,
 dd,
-input{
+input {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-} 
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	/* width: 100%;
@@ -183,7 +184,7 @@ nav {
 	display: inline-block;
 	width: 250px;
 	height: 90px;
-	background: #f1f1f1;
+	background: #transparent;
 	margin: 10px;
 	box-shadow: 0 5px 15px -5px #00000070;
 	color: #3498db;
@@ -460,20 +461,24 @@ nav {
 		margin-top: 20px;
 	}
 }
-@media screen and (max-width: 480px){
-	.container{
+
+@media screen and (max-width: 480px) {
+	.container {
 		margin: 0 atuo;
 		margin-left: 5%;
 	}
+
 	.contactarea {
 		margin-left: 20px;
 	}
-	.contact input:first-child{
+
+	.contact input:first-child {
 		margin-top: 10px;
 	}
+
 	.contactarea button {
 		width: 100%;
-		margin-left: 0px; 
+		margin-left: 0px;
 
 	}
 }
