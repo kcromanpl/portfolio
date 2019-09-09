@@ -117,6 +117,7 @@ nav {
 	color: #494964;
 }
 
+
 /* INFORMATION */
 .presentation {
 	display: flex;
@@ -184,7 +185,7 @@ nav {
 	display: inline-block;
 	width: 250px;
 	height: 90px;
-	background: #transparent;
+	background: transparent;
 	margin: 10px;
 	box-shadow: 0 5px 15px -5px #00000070;
 	color: #3498db;
@@ -348,7 +349,6 @@ nav {
 .contactname {
 	margin-top: -30px;
 	text-align: center;
-	/* minus rakhera milaunu good ya bad ? */
 }
 
 .contactname img {
@@ -391,6 +391,12 @@ nav {
 
 }
 
+footer p {
+	color: #5f5f79;
+	text-align: center;
+	margin: 20px 0px;
+}
+
 @media screen and (max-width: 1000px) {
 
 	/* INTRODUCTION PART */
@@ -400,6 +406,8 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+
+	/* Navigation */
 	.line {
 		width: 30px;
 		height: 3px;
@@ -463,6 +471,8 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+
+	/* Contact */
 	.container {
 		margin: 0 atuo;
 		margin-left: 5%;
@@ -481,10 +491,4 @@ nav {
 		margin-left: 0px;
 
 	}
-}
-
-footer p {
-	color: #5f5f79;
-	text-align: center;
-	margin: 20px 0px;
 }
